@@ -12,20 +12,32 @@
     /* Responsives Design */
     iframe {
       max-width: 100%;
-      height: auto;
-    }
-
-    /* Preis-Widgets optimieren */
-    #cro-price-widget, #wsteth-price-widget {
-      max-width: 90%;
       width: 100%;
-      padding: 0.8rem;
-      font-size: 1.2rem;
-      margin: 1rem auto;
+      height: 1000px; /* Größere Charts */
     }
 
-    /* Textgrößen anpassen */
+    /* Preis-Widgets optimieren (kleiner machen) */
+    #cro-price-widget, #wsteth-price-widget {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      border: 1px solid #ccc;
+      max-width: 80%;
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin: 1rem auto;
+      min-height: 60px;
+      border-radius: 8px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Preis-Text optimieren */
     .price-value {
+      font-weight: bold;
+      color: #0a5f5f;
       font-size: 4vw;
     }
 
@@ -36,59 +48,27 @@
         padding: 10px;
       }
       iframe {
-        height: 300px;
+        height: 500px; /* Größere Charts auf Mobile */
       }
       #cro-price-widget, #wsteth-price-widget {
-        font-size: 1rem;
-        padding: 0.5rem;
+        padding: 0.3rem;
+        font-size: 0.9rem;
+        min-height: 50px;
       }
+    }
 
     /* Original CSS */
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; color: #7e0d19; -webkit-text-stroke: #7e0d19}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; -webkit-text-stroke: #000000; min-height: 18.0px}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; color: #7e0d19; -webkit-text-stroke: #7e0d19; background-color: #ffffff}
-    span.s1 {font-kerning: none; color: #0000b5; background-color: black; -webkit-text-stroke: 0px #0000b5}
-    span.s2 {font-kerning: none; background-color: black}
-    span.s3 {font-kerning: none; color: #7e0d19; background-color: black; -webkit-text-stroke: 0px #7e0d19}
-    span.s4 {font-kerning: none}
-    span.s5 {font-kerning: none; color: #0000b5; -webkit-text-stroke: 0px #0000b5}
-
-    /* Widget-Styles */
-    #cro-price-widget {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      border: 1px solid #ccc;
-      max-width: 300px;
-      padding: 1rem;
-      border-radius: 8px;
-      margin: 0 auto; /* Zentriert das Widget horizontal */
-      text-align: center; /* Zentrierter Text im Widget */
-      margin-bottom: 1rem; /* Etwas Platz unterhalb */
-    }
-    #cro-price-widget .price-value {
-      font-weight: bold;
-      color: #0a5f5f;
-      font-size: 1.5rem;
-    }
-
-    /* Widget für wstETH (ähnlicher Stil) */
-    #wsteth-price-widget {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      border: 1px solid #ccc;
-      max-width: 300px;
-      padding: 1rem;
-      border-radius: 8px;
-      margin: 1rem auto;  /* Zentriert und etwas Abstand nach oben/unten */
-      text-align: center;
-    }
-    #wsteth-price-widget .price-value {
-      font-weight: bold;
-      color: #0a5f5f;
-      font-size: 1.5rem;
-    }
-  </style>
+    p.p1 {margin: 0px; font: 15px Menlo; color: #7e0d19; -webkit-text-stroke: #7e0d19;}
+    p.p2 {margin: 0px; font: 15px Menlo; -webkit-text-stroke: #000000;}
+    p.p3 {margin: 0px; font: 15px Menlo; -webkit-text-stroke: #000000; min-height: 18px;}
+    p.p4 {margin: 0px; font: 15px Menlo; color: #7e0d19; -webkit-text-stroke: #7e0d19; background-color: #ffffff;}
+    
+    span.s1 {font-kerning: none; color: #0000b5; background-color: black; -webkit-text-stroke: 0px #0000b5;}
+    span.s2 {font-kerning: none; background-color: black;}
+    span.s3 {font-kerning: none; color: #7e0d19; background-color: black; -webkit-text-stroke: 0px #7e0d19;}
+    span.s4 {font-kerning: none;}
+    span.s5 {font-kerning: none; color: #0000b5; -webkit-text-stroke: 0px #0000b5;}
+</style>
 </head>
 <body>
 
