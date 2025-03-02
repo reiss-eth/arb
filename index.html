@@ -6,7 +6,43 @@
   <title></title>
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2575.3">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
+    /* Responsives Design */
+    iframe {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Preis-Widgets optimieren */
+    #cro-price-widget, #wsteth-price-widget {
+      max-width: 90%;
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1.2rem;
+      margin: 1rem auto;
+    }
+
+    /* Textgrößen anpassen */
+    .price-value {
+      font-size: 4vw;
+    }
+
+    /* Mobile-Optimierung */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+        padding: 10px;
+      }
+      iframe {
+        height: 300px;
+      }
+      #cro-price-widget, #wsteth-price-widget {
+        font-size: 1rem;
+        padding: 0.5rem;
+      }
+
     /* Original CSS */
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; color: #7e0d19; -webkit-text-stroke: #7e0d19}
     p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px Menlo; -webkit-text-stroke: #000000}
@@ -103,7 +139,7 @@
 
   <!-- Erster DEXTools iFrame -->
 
-    H2 V3 Pool (0,05%)_____________________________________ist oberer Preis höher -> CRO kaufen__________________________________________ist oberer Preis tiefer -> CRO verkaufen
+    zkCRO H2 V3 Pool (0,05%)
  
   <iframe
     id="dextools-widget"
@@ -119,7 +155,7 @@
 
   <!-- Zweiter DEXTools iFrame -->
   
-    wstETH Camelot_____________________________________ist oberer Preis höher -> wstETH kaufen__________________________________________ist oberer Preis tiefer -> wstETH verkaufen
+    wstETH Camelot
   
   <iframe
     id="dextools-widget"
@@ -128,6 +164,11 @@
     src="https://www.dextools.io/widget-chart/en/arbitrum/pe-light/0xdeb89de4bb6ecf5bfed581eb049308b52d9b2da7?theme=dark&chartType=1&chartResolution=30&drawingToolbars=true">
   </iframe><br>
 
+
+<br><br>
+ <!-- Drittes DEXTools iFrame -->
+
+    VUSD H2 V3 Pool (0,05%)
 
 <iframe id="dextools-widget"
     title="DEXTools Trading Chart"
